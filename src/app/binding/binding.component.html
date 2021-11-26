@@ -1,0 +1,5 @@
+<hr>
+<label>Binding component:</label>
+<input type="text" class="form-control" [(ngModel)]="_bindingName">
+<p>The name of the component is: {{ _bindingName }}</p>
+<button (click)="onReset()" class="btn btn-danger" [disabled]="_bindingName === ''">Reset binding component</button>
